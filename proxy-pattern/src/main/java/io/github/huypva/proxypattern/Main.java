@@ -6,7 +6,10 @@ package io.github.huypva.proxypattern;
 public class Main {
 
   public static void main(String[] args) {
+    Subject realSubject = new RealSubject();
 
-    System.out.println("Hello World!");
+    Subject subject = new Proxy(realSubject);
+    subject.doAction();
+
   }
 }

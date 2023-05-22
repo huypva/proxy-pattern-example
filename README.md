@@ -24,12 +24,8 @@ Make sure following software is installed on your PC
 ```shell
 $ ./mvnw clean package
 $ java -jar ./proxy-pattern/target/proxy-pattern-0.0.1-SNAPSHOT.jar
-```
-
-```shell
-Compare str1==str2: true
-Compare str3==str4: false
-Compare value str1.equals(str3): true
+13:07:19.508 [main] INFO io.github.huypva.proxypattern.Proxy -- Proxy doAction.
+13:07:19.509 [main] INFO io.github.huypva.proxypattern.RealSubject -- RealSubject doAction.
 ```
 
 ## Contribute
@@ -43,3 +39,5 @@ The code is open sourced. I encourage fellow developers to contribute and help i
 - Create new Pull Request
 
 ## Reference
+- https://en.wikipedia.org/wiki/Proxy_pattern
+- https://refactoring.guru/design-patterns/proxy
